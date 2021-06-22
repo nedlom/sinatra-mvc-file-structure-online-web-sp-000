@@ -8,4 +8,8 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+  
+  get "/next_ind" do 
+    erb :next_ind
+  end
 end
