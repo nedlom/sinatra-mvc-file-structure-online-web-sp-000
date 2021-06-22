@@ -12,7 +12,11 @@ class Dog
     @name = name
     @breed = breed
     @age = age
-    self.class.all << self
+    binding.pry
+  end
+  
+  def save
+    self.class.all << self if !self.class.all.include?(self)
   end
 
 end
