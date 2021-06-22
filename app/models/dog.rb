@@ -12,7 +12,7 @@ class Dog
     @name = name
     @breed = breed
     @age = age
-    binding.pry
+    self.save
   end
   
   def save
